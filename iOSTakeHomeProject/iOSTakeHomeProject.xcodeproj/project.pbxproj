@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6111EDA32A9F825300B1E18F /* NetworkingEndpointTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111EDA22A9F825300B1E18F /* NetworkingEndpointTesting.swift */; };
+		6111EDA52A9F8FE900B1E18F /* MockURLSessionsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111EDA42A9F8FE900B1E18F /* MockURLSessionsProtocol.swift */; };
+		6111EDA82A9F91A400B1E18F /* ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111EDA72A9F91A400B1E18F /* ManagerTests.swift */; };
 		E713B7672865C23000149D67 /* UsersStaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = E713B7662865C23000149D67 /* UsersStaticData.json */; };
 		E713B7692865C26D00149D67 /* SingleUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = E713B7682865C26D00149D67 /* SingleUserData.json */; };
 		E713B76B2865C35100149D67 /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E713B76A2865C35100149D67 /* UserDetailResponse.swift */; };
@@ -50,13 +53,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E763571F28C35B930007987D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E76BA903285DB76D00D49AEF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E76BA90A285DB76D00D49AEF;
-			remoteInfo = iOSTakeHomeProject;
-		};
 		E7BB1D6C28A7C30800374472 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E76BA903285DB76D00D49AEF /* Project object */;
@@ -67,6 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6111EDA22A9F825300B1E18F /* NetworkingEndpointTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingEndpointTesting.swift; sourceTree = "<group>"; };
+		6111EDA42A9F8FE900B1E18F /* MockURLSessionsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionsProtocol.swift; sourceTree = "<group>"; };
+		6111EDA72A9F91A400B1E18F /* ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerTests.swift; sourceTree = "<group>"; };
 		E713B7662865C23000149D67 /* UsersStaticData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UsersStaticData.json; sourceTree = "<group>"; };
 		E713B7682865C26D00149D67 /* SingleUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleUserData.json; sourceTree = "<group>"; };
 		E713B76A2865C35100149D67 /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailResponse.swift; sourceTree = "<group>"; };
@@ -81,7 +80,6 @@
 		E71B25A128B7DA8400D2F042 /* CreateValidatorSuccessMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidatorSuccessMock.swift; sourceTree = "<group>"; };
 		E71B25A528B7DC8A00D2F042 /* CreateValidatorFailureMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidatorFailureMock.swift; sourceTree = "<group>"; };
 		E71B25AB28B7DEF800D2F042 /* NetworkingManagerCreateFailureMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManagerCreateFailureMock.swift; sourceTree = "<group>"; };
-		E763571928C35B930007987D /* iOSTakeHomeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTakeHomeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E763572828C35DD00007987D /* UITestingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestingHelper.swift; sourceTree = "<group>"; };
 		E76BA90B285DB76D00D49AEF /* iOSTakeHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTakeHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76BA90E285DB76D00D49AEF /* iOSTakeHomeProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTakeHomeProjectApp.swift; sourceTree = "<group>"; };
@@ -114,13 +112,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E763571628C35B930007987D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E76BA908285DB76D00D49AEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +129,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6111ED9A2A9F811100B1E18F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6111EDA62A9F919400B1E18F /* Manager */,
+				6111ED9B2A9F811100B1E18F /* Mocks */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6111ED9B2A9F811100B1E18F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6111EDA42A9F8FE900B1E18F /* MockURLSessionsProtocol.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		6111EDA12A9F821E00B1E18F /* NetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				6111EDA22A9F825300B1E18F /* NetworkingEndpointTesting.swift */,
+			);
+			path = NetworkingTests;
+			sourceTree = "<group>";
+		};
+		6111EDA62A9F919400B1E18F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6111EDA72A9F91A400B1E18F /* ManagerTests.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		E713B7652865C1EE00149D67 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +249,6 @@
 			children = (
 				E76BA90B285DB76D00D49AEF /* iOSTakeHomeProject.app */,
 				E7BB1D6828A7C30800374472 /* iOSTakeHomeProjectTests.xctest */,
-				E763571928C35B930007987D /* iOSTakeHomeProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -428,6 +451,8 @@
 		E7BB1D6928A7C30800374472 /* iOSTakeHomeProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				6111EDA12A9F821E00B1E18F /* NetworkingTests */,
+				6111ED9A2A9F811100B1E18F /* Networking */,
 				E77B243128B0CC7A00FEC8A7 /* Form */,
 				E7BB1D7128A7C32600374472 /* Mapper */,
 			);
@@ -496,24 +521,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E763571828C35B930007987D /* iOSTakeHomeProjectUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E763572328C35B930007987D /* Build configuration list for PBXNativeTarget "iOSTakeHomeProjectUITests" */;
-			buildPhases = (
-				E763571528C35B930007987D /* Sources */,
-				E763571628C35B930007987D /* Frameworks */,
-				E763571728C35B930007987D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E763572028C35B930007987D /* PBXTargetDependency */,
-			);
-			name = iOSTakeHomeProjectUITests;
-			productName = iOSTakeHomeProjectUITests;
-			productReference = E763571928C35B930007987D /* iOSTakeHomeProjectUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		E76BA90A285DB76D00D49AEF /* iOSTakeHomeProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E76BA919285DB76E00D49AEF /* Build configuration list for PBXNativeTarget "iOSTakeHomeProject" */;
@@ -559,11 +566,6 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					E763571828C35B930007987D = {
-						CreatedOnToolsVersion = 13.4;
-						LastSwiftMigration = 1340;
-						TestTargetID = E76BA90A285DB76D00D49AEF;
-					};
 					E76BA90A285DB76D00D49AEF = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -588,19 +590,11 @@
 			targets = (
 				E76BA90A285DB76D00D49AEF /* iOSTakeHomeProject */,
 				E7BB1D6728A7C30800374472 /* iOSTakeHomeProjectTests */,
-				E763571828C35B930007987D /* iOSTakeHomeProjectUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E763571728C35B930007987D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E76BA909285DB76D00D49AEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -622,13 +616,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E763571528C35B930007987D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E76BA907285DB76D00D49AEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -675,6 +662,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E77B243328B0CCBA00FEC8A7 /* CreateFormValidatorTests.swift in Sources */,
+				6111EDA82A9F91A400B1E18F /* ManagerTests.swift in Sources */,
+				6111EDA32A9F825300B1E18F /* NetworkingEndpointTesting.swift in Sources */,
+				6111EDA52A9F8FE900B1E18F /* MockURLSessionsProtocol.swift in Sources */,
 				E7BB1D7328A7C33800374472 /* JSONMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -682,11 +672,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E763572028C35B930007987D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E76BA90A285DB76D00D49AEF /* iOSTakeHomeProject */;
-			targetProxy = E763571F28C35B930007987D /* PBXContainerItemProxy */;
-		};
 		E7BB1D6D28A7C30800374472 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E76BA90A285DB76D00D49AEF /* iOSTakeHomeProject */;
@@ -695,53 +680,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		E763572128C35B930007987D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N593J3PQL4;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tundsdev.iOSTakeHomeProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iOSTakeHomeProject;
-			};
-			name = Debug;
-		};
-		E763572228C35B930007987D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N593J3PQL4;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tundsdev.iOSTakeHomeProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iOSTakeHomeProject;
-			};
-			name = Release;
-		};
 		E76BA917285DB76E00D49AEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -953,15 +891,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E763572328C35B930007987D /* Build configuration list for PBXNativeTarget "iOSTakeHomeProjectUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E763572128C35B930007987D /* Debug */,
-				E763572228C35B930007987D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		E76BA906285DB76D00D49AEF /* Build configuration list for PBXProject "iOSTakeHomeProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

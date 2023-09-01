@@ -78,8 +78,10 @@ extension NetworkingManager {
     }
 }
 
+/*
+ Conforming to equatable 
+ */
 extension NetworkingManager.NetworkingError: Equatable {
-    
     static func == (lhs: NetworkingManager.NetworkingError, rhs: NetworkingManager.NetworkingError) -> Bool {
         switch(lhs, rhs) {
         case (.invalidUrl, .invalidUrl):
