@@ -25,9 +25,7 @@ final class CreateViewModel: ObservableObject {
     
     @MainActor
     func create() async {
-        
         do {
-         
             try validator.validate(person)
             
             state = .submitting
