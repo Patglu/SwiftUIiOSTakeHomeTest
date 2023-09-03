@@ -12,6 +12,8 @@
 		6111EDA82A9F91A400B1E18F /* ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111EDA72A9F91A400B1E18F /* ManagerTests.swift */; };
 		612C9FD92AA4F91600C9E9B6 /* CreateValidatorFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C9FD82AA4F91600C9E9B6 /* CreateValidatorFailureMock.swift */; };
 		612C9FDC2AA4F98300C9E9B6 /* CreateViewModelValidationFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C9FDB2AA4F98300C9E9B6 /* CreateViewModelValidationFailureTests.swift */; };
+		612C9FDE2AA4FD5900C9E9B6 /* NetworkCreateFailureMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C9FDD2AA4FD5900C9E9B6 /* NetworkCreateFailureMock.swift */; };
+		612C9FE02AA4FE1400C9E9B6 /* CreateViewModelFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C9FDF2AA4FE1400C9E9B6 /* CreateViewModelFailureTests.swift */; };
 		61FB8AB22AA1E9F300485ED4 /* PeopleViewModelSuccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB8AB12AA1E9F300485ED4 /* PeopleViewModelSuccessTests.swift */; };
 		61FB8AB42AA1EAE200485ED4 /* NetworkingManagerUserResponseSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB8AB32AA1EAE200485ED4 /* NetworkingManagerUserResponseSuccessMock.swift */; };
 		61FB8AB62AA4E0BE00485ED4 /* PeopleViewModelFailureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB8AB52AA4E0BE00485ED4 /* PeopleViewModelFailureTests.swift */; };
@@ -81,6 +83,8 @@
 		6111EDA72A9F91A400B1E18F /* ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerTests.swift; sourceTree = "<group>"; };
 		612C9FD82AA4F91600C9E9B6 /* CreateValidatorFailureMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidatorFailureMock.swift; sourceTree = "<group>"; };
 		612C9FDB2AA4F98300C9E9B6 /* CreateViewModelValidationFailureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModelValidationFailureTests.swift; sourceTree = "<group>"; };
+		612C9FDD2AA4FD5900C9E9B6 /* NetworkCreateFailureMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCreateFailureMock.swift; sourceTree = "<group>"; };
+		612C9FDF2AA4FE1400C9E9B6 /* CreateViewModelFailureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModelFailureTests.swift; sourceTree = "<group>"; };
 		61FB8AB12AA1E9F300485ED4 /* PeopleViewModelSuccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModelSuccessTests.swift; sourceTree = "<group>"; };
 		61FB8AB32AA1EAE200485ED4 /* NetworkingManagerUserResponseSuccessMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManagerUserResponseSuccessMock.swift; sourceTree = "<group>"; };
 		61FB8AB52AA4E0BE00485ED4 /* PeopleViewModelFailureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModelFailureTests.swift; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				61FB8AC52AA4F42F00485ED4 /* NetworkCreateSuccessMock.swift */,
+				612C9FDD2AA4FD5900C9E9B6 /* NetworkCreateFailureMock.swift */,
 			);
 			path = Creating;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				61FB8AC82AA4F4AD00485ED4 /* Mocks */,
 				61FB8ACB2AA4F53300485ED4 /* CreateViewModelSuccessTests.swift */,
 				612C9FDB2AA4F98300C9E9B6 /* CreateViewModelValidationFailureTests.swift */,
+				612C9FDF2AA4FE1400C9E9B6 /* CreateViewModelFailureTests.swift */,
 			);
 			path = Creating;
 			sourceTree = "<group>";
@@ -773,6 +779,8 @@
 				61FB8AC12AA4ECAC00485ED4 /* DetailViewModelSuccessTests.swift in Sources */,
 				6111EDA52A9F8FE900B1E18F /* MockURLSessionsProtocol.swift in Sources */,
 				612C9FDC2AA4F98300C9E9B6 /* CreateViewModelValidationFailureTests.swift in Sources */,
+				612C9FE02AA4FE1400C9E9B6 /* CreateViewModelFailureTests.swift in Sources */,
+				612C9FDE2AA4FD5900C9E9B6 /* NetworkCreateFailureMock.swift in Sources */,
 				E7BB1D7328A7C33800374472 /* JSONMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
