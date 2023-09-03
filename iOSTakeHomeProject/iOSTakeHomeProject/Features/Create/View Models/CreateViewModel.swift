@@ -14,10 +14,10 @@ final class CreateViewModel: ObservableObject {
     @Published private(set) var error: FormError?
     @Published var hasError = false
     
-    private let networkingManager: NetworkingManagerImpl!
+    private let networkingManager: NetworkingManagerimplementation!
     private let validator: CreateValidatorImpl!
     
-    init(networkingManager: NetworkingManagerImpl = NetworkingManager.shared,
+    init(networkingManager: NetworkingManagerimplementation = NetworkingManager.shared,
          validator: CreateValidatorImpl = CreateValidator()) {
         self.networkingManager = networkingManager
         self.validator = validator

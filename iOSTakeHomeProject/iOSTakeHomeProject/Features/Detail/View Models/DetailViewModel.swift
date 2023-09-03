@@ -14,9 +14,9 @@ final class DetailViewModel: ObservableObject {
     @Published private(set) var isLoading = false
     @Published var hasError = false
     
-    private let networkingManager: NetworkingManagerImpl!
+    private let networkingManager: NetworkingManagerimplementation!
     
-    init(networkingManager: NetworkingManagerImpl = NetworkingManager.shared) {
+    init(networkingManager: NetworkingManagerimplementation = NetworkingManager.shared) {
         self.networkingManager = networkingManager
     }
     

@@ -17,7 +17,8 @@ final class PeopleViewModel: ObservableObject {
     private(set) var page = 1
     private(set) var totalPages: Int?
     
-    private let networkingManager: NetworkingManagerImpl!
+    /*This is essentailly like having a varibale of type netowrkmanager */
+    private let networkingManager: NetworkingManagerimplementation!
     
     var isLoading: Bool {
         viewState == .loading
@@ -27,7 +28,7 @@ final class PeopleViewModel: ObservableObject {
         viewState == .fetching
     }
     
-    init(networkingManager: NetworkingManagerImpl = NetworkingManager.shared) {
+    init(networkingManager: NetworkingManagerimplementation = NetworkingManager.shared) {
         self.networkingManager = networkingManager
     }
     

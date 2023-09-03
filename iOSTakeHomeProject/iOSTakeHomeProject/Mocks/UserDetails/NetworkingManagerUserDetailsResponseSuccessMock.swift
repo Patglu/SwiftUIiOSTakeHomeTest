@@ -8,7 +8,7 @@
 #if DEBUG
 import Foundation
 
-class NetworkingManagerUserDetailsResponseSuccessMock: NetworkingManagerImpl {
+class NetworkingManagerUserDetailsResponseSuccessMock: NetworkingManagerimplementation {
     
     func request<T>(session: URLSession, _ endpoint: Endpoint, type: T.Type) async throws -> T where T : Decodable {
         return try StaticJSONMapper.decode(file: "SingleUserData", type: UserDetailResponse.self) as! T

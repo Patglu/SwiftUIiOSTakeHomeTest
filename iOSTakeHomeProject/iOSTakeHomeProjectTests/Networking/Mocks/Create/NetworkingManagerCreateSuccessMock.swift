@@ -8,7 +8,7 @@
 #if DEBUG
 import Foundation
 
-class NetworkingManagerCreateSuccessMock: NetworkingManagerImpl {
+class NetworkingManagerCreateSuccessMock: NetworkingManagerimplementation {
     
     func request<T>(session: URLSession, _ endpoint: Endpoint, type: T.Type) async throws -> T where T : Decodable {
         return Data() as! T

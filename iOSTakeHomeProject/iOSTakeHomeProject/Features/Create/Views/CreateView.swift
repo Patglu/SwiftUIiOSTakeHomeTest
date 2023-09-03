@@ -22,7 +22,7 @@ struct CreateView: View {
         
         if UITestingHelper.isUITesting {
             
-            let mock: NetworkingManagerImpl = UITestingHelper.isCreateNetworkingSuccessful ? NetworkingManagerCreateSuccessMock() : NetworkingManagerCreateFailureMock()
+            let mock: NetworkingManagerimplementation = UITestingHelper.isCreateNetworkingSuccessful ? NetworkingManagerCreateSuccessMock() : NetworkingManagerCreateFailureMock()
             _vm = StateObject(wrappedValue: CreateViewModel(networkingManager: mock))
             
         } else {

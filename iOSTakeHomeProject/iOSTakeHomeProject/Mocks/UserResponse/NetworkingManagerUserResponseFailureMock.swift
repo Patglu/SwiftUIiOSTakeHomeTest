@@ -8,7 +8,7 @@
 #if DEBUG
 import Foundation
 
-class NetworkingManagerUserResponseFailureMock: NetworkingManagerImpl {
+class NetworkingManagerUserResponseFailureMock: NetworkingManagerimplementation {
     
     func request<T>(session: URLSession, _ endpoint: Endpoint, type: T.Type) async throws -> T where T : Decodable, T : Encodable {
         throw NetworkingManager.NetworkingError.invalidUrl
