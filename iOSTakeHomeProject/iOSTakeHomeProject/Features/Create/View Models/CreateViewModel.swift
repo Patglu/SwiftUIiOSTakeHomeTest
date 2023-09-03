@@ -15,10 +15,10 @@ final class CreateViewModel: ObservableObject {
     @Published var hasError = false
     
     private let networkingManager: NetworkingManagerimplementation!
-    private let validator: CreateValidatorImpl!
+    private let validator: CreateValidatorImplimentation!
     
     init(networkingManager: NetworkingManagerimplementation = NetworkingManager.shared,
-         validator: CreateValidatorImpl = CreateValidator()) {
+         validator: CreateValidatorImplimentation = CreateValidator()) {
         self.networkingManager = networkingManager
         self.validator = validator
     }

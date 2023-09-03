@@ -8,7 +8,7 @@
 #if DEBUG
 import Foundation
 
-struct CreateValidatorSuccessMock: CreateValidatorImpl {
+struct CreateValidatorSuccessMock: CreateValidatorImplimentation {
     
     func validate(_ person: NewPerson) throws {}
 }

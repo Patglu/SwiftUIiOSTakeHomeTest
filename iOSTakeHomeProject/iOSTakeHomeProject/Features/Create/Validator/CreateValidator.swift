@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol CreateValidatorImpl {
+protocol CreateValidatorImplimentation {
     func validate(_ person: NewPerson) throws
 }
 
-struct CreateValidator: CreateValidatorImpl {
+struct CreateValidator: CreateValidatorImplimentation {
     
     func validate(_ person: NewPerson) throws {
         
